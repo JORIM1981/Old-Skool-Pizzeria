@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+/*--- NAVIGATION SECTION --- */
+body {
+  font-family: Catamaran;
+}
+
+.hero {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+}
+
+header {
+  background-image: url(img/background1.jpeg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
