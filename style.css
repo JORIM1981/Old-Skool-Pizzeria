@@ -89,6 +89,7 @@ body {
 .about h3 {
   color: #85af4b;
   font-family: Catamaran;
+  font-size: 25px;
 }
 
 .about .column-left, .about .column-right {
