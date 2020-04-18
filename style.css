@@ -11,6 +11,11 @@ body {
   font-family: Catamaran;
 }
 
+.round {
+  width: 60px;
+  height: 60px;
+}
+
 .height {
   min-height: 80vh;
 }
