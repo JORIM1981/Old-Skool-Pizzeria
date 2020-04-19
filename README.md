@@ -3,16 +3,16 @@
 #### By **Jorim Midumbi Okong'o Opondo**
 ## Description
 
-Project to create a landing page for a fictional pizzeria. The site has an order online section that allows clients to chose between six pizza flavours, three crust sizes, five crust types and eleven different toppings.The website incorporates bootstrap styling, jQuery effects and also a contact form to allow clients to voice there criticism and  suggestions. 
+Project to create a landing page for a fictional pizzeria. The site has an order online section that allows clients to chose between six pizza flavours, three crust sizes, five crust types and eleven different toppings.The online order section also has an option where the client can chose whether they want their order to be delivered or they can pick it up. The website incorporates bootstrap styling, jQuery effects and also a contact form to allow clients to voice there criticism and suggestions. 
 
-![Delani-Studio](https://github.com/JORIM1981/Delani-Studio/blob/master/Screenshot.png)
+![Old-Skool-Pizzeria](https://github.com/JORIM1981/Delani-Studio/blob/master/Screenshot.png)
 ## Technologies Used
 
 - HTML 
 - CSS (Bootstrap)
 - Markdown
 - JavaScript 
-- jQuery  
+- jQuery 
 
 ##### Requirements
 
@@ -27,17 +27,21 @@ Any browser and any text editor
 
 ## Behaviour Driven Development
 
+| Behaviour      | Input        | Output       |
+| :------------- | :----------: | -----------: |
+| Select pizza flavor  |   Margherita |   Margherita   |
+| Select piza size  | large, medium, small |  large  |
+| Select Crust   |  Either cripsy,stuffed or glutten-free  |     |
+| select toppings  |  check all the topppings you want     |     |
+| Press Proceed button |     | Table with your selections with the total price for that selection.|
+| Press add pizza button | pizza flavor,size, crust and toppings   | new selection added to the table|
+| Press Checkout |     | Your bill is ...  |
+| Press home delivery | Your name, phone number and delivery location     |  |
+| press place order| | Your order has been received and it will be delivered to you with your name, place of delivery and amount to be paid.|
 1. Displays Form For Entering Name and Email
-   - INPUT: "User's Name Entered"
-   - INPUT: "User's Email Entered"
-   - OUTPUT:"Displays to the user through a pop up that we have received their message and also thank them for contacting us"
-2. Displays an Error Message if Name Input Left Blank
-   - INPUT: ""
-   - OUTPUT:"Displays Error Message"
-3. Displays an Error Message if Email Input Left Blank
    - INPUT: "" 
    - OUTPUT:"Display an Error Message" 
-4. Submit Form and Reset the Message on Click
+2. Submit Form and Reset the Message on Click
    - INPUT: "Click Submit Button" 
    - OUTPUT:"Submits the Form"
 
@@ -61,7 +65,7 @@ If you find a bug (the website couldn't handle the query and or gave undesired r
 
 If you'd like to request a new function, feel free to do so by opening an issue here. Please include sample queries and their corresponding results.
 
-##### Link to Live Site : (https://jorim1981.github.io/Delani-Studio/)
+##### Link to Live Site : (https://jorim1981.github.io/Old-Skool-Pizzeria/)
 
 ### License
 
