@@ -5,7 +5,7 @@
 
 Project to create a landing page for a fictional pizzeria. The site has an order online section that allows clients to chose between six pizza flavours, three crust sizes, five crust types and eleven different toppings.The online order section also has an option where the client can chose whether they want their order to be delivered or they can pick it up. The website incorporates bootstrap styling, jQuery effects and also a contact form to allow clients to voice there criticism and suggestions. 
 
-![Old-Skool-Pizzeria](https://github.com/JORIM1981/Delani-Studio/blob/master/Screenshot.png)
+![Old-Skool-Pizzeria](https://github.com/JORIM1981/Old-Skool-Pizzeria/blob/master/img/Screenshot.png)
 ## Technologies Used
 
 - HTML 
