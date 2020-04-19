@@ -27,7 +27,7 @@ Total.prototype.finalTotal = function () {
   return this.price * this.quantity + this.delivery;
 };
 
-var sizePrice = [1200, 900, 600];
+var sizePrice = [1400, 900, 500];
 var deliverPrices = [0, 200];
 
 //USER INTERFACE LOGIC
