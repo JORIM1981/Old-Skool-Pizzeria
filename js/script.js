@@ -20,9 +20,9 @@ Total.prototype.finalTotal = function () {
   return this.price * this.quantity + this.delivery;
 };
 
-
 var sizePrice = [1200, 900, 600]
 var deliverPrices = [0, 200];
+
 //USER INTERFACE LOGIC
 $(document).ready(function () {
   $('form#myForm').submit(function (event) {
@@ -39,20 +39,17 @@ $(document).ready(function () {
 
       var pizzaPick = parseInt($('#pick').val());
 
-
       var price = sizePrice[pizzaSize - 1];
 
-
       var DeliveryCost = deliverPrices[pizzaPick - 1];
-
-
 
       newOrder = new Order(pizzaType, pizzaSize, pizzaCrust, pizzaTop);
       newTotal = new Total(price, pizzaQty, DeliveryCost);
       if (pizzaPick===1){
       alert("Your order is: " + newOrder.fullOrder() + ".continue to see your total bill");
       alert("your bill is: " + newTotal.finalTotal());
-      }else{
+      }
+      else{
           if(pizzaPick===2){
               prompt("Enter where you want your pizza to be delivered");
               alert("Your order has been received and it will be delivered. Continue to see your order details");
@@ -63,9 +60,6 @@ $(document).ready(function () {
 
   });
 
-
-
-
   //CONTACT MESSAGE FUNCTION
   $('form#contactForm').submit(function (event) {
       event.preventDefault();
@@ -74,6 +68,5 @@ $(document).ready(function () {
       var mess = $('#message').val();
       alert("Hi " + name + " we have received your message and we will get in touch. Thank you for contacting us.");
   });
-
 
 });
