@@ -27,41 +27,13 @@ var deliverPrices = [0, 300];
 
 //USER INTERFACE LOGIC
 
-$(document).ready(function () {
-  $('form#myForm').submit(function (event) {
-      event.preventDefault();
-      var pizzaType = $('#type').val();
+//CONTACT US FUNCTION
 
-      var pizzaSize = parseInt($('#size').val());
+$('form#contactForm').submit(function (event) {
+  event.preventDefault();
+  var name = $('#name').val();
+  var pass = $('#email').val();
+  var mess = $('#message').val();
+  alert("Hi " + name + " we have received your message and we will get in touch. Thank you for contacting us.");
+});
 
-      var pizzaCrust = $('#crust').val();
-
-      var pizzaTop = $('#top').val();
-
-      var pizzaQty = parseInt($('#qty').val());
-
-      var pizzaPick = parseInt($('#pick').val());
-
-
-      var price = sizePrice[pizzaSize - 1];
-
-
-      var DeliveryCost = deliverPrices[pizzaPick - 1];
-
-
-
-      newOrder = new Order(pizzaType, pizzaSize, pizzaCrust, pizzaTop);
-      newTotal = new Total(price, pizzaQty, DeliveryCost);
-      if (pizzaPick===1){
-      alert("Your order is: " + newOrder.fullOrder() + ".continue to see your total bill");
-      alert("your bill is: " + newTotal.finalTotal());
-      }else{
-          if(pizzaPick===2){
-              prompt("Enter where you want your pizza to be delivered");
-              alert("Your order has been received and it will be delivered. Continue to see your order details");
-              alert("Your order is: " + newOrder.fullOrder() + ".continue to see your total bill");
-              alert("your bill is: " + newTotal.finalTotal());
-          }
-      }
-
-  });

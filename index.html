@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Old Skool Pizza Shop</title> 
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900|Cormorant+Garamond:300.300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">   
+    <title>Old Skool Pizza Shop</title>
+    <link href="css/bootstrap.css" rel="stylesheet"> 
     <script src="js/all.js"></script>
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900|Cormorant+Garamond:300.300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
@@ -233,20 +233,64 @@
                   </select>
               </div>
               <div class="form-group">
-                <div class="container">
-                  <div class="center">
-
-                  <button type="submit" class="btn btn-secondary btn-sm">checkout</button>
-                  </div>
-                </div>
+                <button type="submit" class="btn btn-secondary btn-sm text-uppercase">checkout</button>
               </div>
           </form>
       </div>
-
   </div>
   </div>
  </section>
 
+<!-- CONTACT SECTION -->
+
+<section id="contact" class="py-5">
+  <div class="container">
+      <div class="row">
+          <div class="col text-center text-uppercase text-white mb-0">
+              <h2>Contact</h2>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-6 my-3">
+              <div class="card card-body">
+                  <div class="card-title text-center">
+                      <h2 class="text-capitalize">contact us</h2>
+                  </div>
+                  <form id="contactForm">
+                      <div class="form-group mt-3">
+                          <input type="text" class="form-control form-control-lg" id="name" placeholder="name"
+                              required>
+                      </div>
+                      <div class="form-group mt-3">
+                          <input type="email" class="form-control form-control-lg " placeholder="email"
+                              id="email" required>
+                      </div>
+                      <div class="form-group mt-3">
+                        <textarea name="message" id="message" class="form textarea"  placeholder="Message" required></textarea>
+                      </div>
+                      <button type="submit"
+                          class="btn btn-secondary btn-sm text-uppercase">submit</button>
+
+                  </form>
+              </div>
+          </div>
+          <div class="col-md-6 my-3">
+              <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255282.35853743783!2d36.707308294417786!3d-1.302861790820887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi!5e0!3m2!1sen!2ske!4v1567193109939!5m2!1sen!2ske"
+                      width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col text-center">
+              <a href="#" class="btn"><i class="fab fa-facebook fa-3x text-light m-2"></i></a>
+              <a href="#" class="btn"><i class="fab fa-twitter fa-3x text-light m-2"></i></a>
+              <a href="#" class="btn"><i class="fab fa-google-plus fa-3x text-light m-2"></i></a>
+          </div>
+      </div>
+  </div>
+</section>
 
     
     <script src="js/jquery-3.4.1.js"></script>
