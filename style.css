@@ -139,3 +139,20 @@ body {
   color: white;
   font-family: Catamaran;
 }
+
+/*--- ORDER SECTION --- */
+
+#order h2 {
+  font-family: Catamaran;
+}
+
+#order h2:after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  margin-left: -40px;
+  left: 50%;
+  bottom: 0px;
+  background-color: #85af4b;
+}
